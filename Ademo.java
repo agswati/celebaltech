@@ -10,6 +10,7 @@ import java.util.Map;
 public class Ademo {
     public static void main(String args[]) {
         int l = 10000;
+        // anonymous class
         Person p1 = new Person() {
             @Override
             public void salary() {
@@ -18,14 +19,14 @@ public class Ademo {
             }
         };
         p1.salary();
-
+        //lambda 
         Person p2 = () -> {
 
             System.out.println("Inc salary= " + l);
         };
         p2.salary();
 
-
+        //streams
         List<String> strings = Arrays.asList("c", "ba", "", "efg", "abcd", "", "jkl");
         List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
         System.out.println("Filtered List: " + filtered);
