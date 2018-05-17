@@ -14,7 +14,7 @@ public class Ademo {
             @Override
             public void salary() {
 
-                System.out.print("Salary is " + x);
+                System.out.println("Salary is " + x);
             }
         };
         p1.salary();
@@ -50,7 +50,7 @@ public class Ademo {
 
     public interface Person{
         public void salary();
-        int x=100;
+        int x=50000;
 
     }
 }
